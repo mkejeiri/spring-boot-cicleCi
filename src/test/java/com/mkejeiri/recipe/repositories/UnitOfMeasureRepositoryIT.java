@@ -53,7 +53,6 @@ public class UnitOfMeasureRepositoryIT {
 	
 	@Test
 	public final void testFindByDescriptionCup() {
-		// fail("Not yet implemented"); // TODO
 		Optional<UnitOfMeasure> uomOptional = unitOfMeasureRepository.findByDescription("Cup");
 		assertEquals("Cup", uomOptional.orElseGet(null).getDescription());
 	}
